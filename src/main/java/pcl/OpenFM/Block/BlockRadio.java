@@ -93,12 +93,13 @@ public class BlockRadio extends Block implements ITileEntityProvider, IPeriphera
 
 	@Override
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int metadata, float clickX, float clickY, float clickZ) {
-			TileEntity tileEntity = world.getTileEntity(x, y, z);
-			if (tileEntity == null || player.isSneaking()) {
-				return false;
-			}
-			player.openGui(OpenFM.instance, 0, world, x, y, z);
-			return true;
+			//TileEntity tileEntity = world.getTileEntity(x, y, z);
+			//if (tileEntity == null || player.isSneaking()) {
+			//	return false;
+			//}
+			//player.openGui(OpenFM.instance, 0, world, x, y, z);
+			//return true;
+			return false;
 	}
 
 	@Override

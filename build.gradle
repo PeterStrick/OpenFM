@@ -49,7 +49,7 @@ if (System.getenv().BUILD_NUMBER != null)
 else
 	ext.buildNumber = 0
 
-version = "0.1.0"
+version = "0.1.1"
 group = "pcl.OpenFM"
 archivesBaseName = "OpenFM-1.7.10"
 
