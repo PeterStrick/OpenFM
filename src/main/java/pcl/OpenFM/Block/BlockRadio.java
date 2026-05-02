@@ -52,12 +52,13 @@ public class BlockRadio extends Block implements IPeripheralProvider {
 	
 	@Override
 	public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing side, float hitX, float hitY, float hitZ) {
-		TileEntity tileEntity = world.getTileEntity(pos);
-		if (tileEntity == null || player.isSneaking()) {
-			return false;
-		}
-		player.openGui(OpenFM.instance, 0, world, pos.getX(), pos.getY(), pos.getZ());
-		return true;
+//		TileEntity tileEntity = world.getTileEntity(pos);
+//		if (tileEntity == null || player.isSneaking()) {
+//			return false;
+//		}
+//		player.openGui(OpenFM.instance, 0, world, pos.getX(), pos.getY(), pos.getZ());
+//		return true;
+		return false;
 	}
 
 	@Override
