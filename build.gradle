@@ -4,11 +4,13 @@ buildscript {
         jcenter()
         maven {
             name = "forge"
-            url = "http://files.minecraftforge.net/maven"
+            url = "https://maven.minecraftforge.net/"
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath ('com.anatawa12.forge:ForgeGradle:1.2-1.1.+') {
+            changing = true
+        }
     }
 }
 
@@ -23,8 +25,8 @@ targetCompatibility = 1.8
 repositories {
 	mavenCentral()
 	maven {
-        name = "OC repo mirror"
-        url = "http://maven.pc-logix.com/"
+        name = "OC repo"
+        url = "https://maven.cil.li/"
     }
 }
 
@@ -63,7 +65,7 @@ else if (System.getenv("BUILD_NUMBER") != null)
 else
     ext.buildNumber = "+" + getGitRef()
 
-version = "0.1.0"
+version = "0.1.1"
 group = "pcl.OpenFM"
 archivesBaseName = "OpenFM-1.12.2"
 
